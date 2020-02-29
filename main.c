@@ -23,5 +23,17 @@ int main(int argc, char **argv)
 	t_fdf *data;
 
 	data = (t_fdf*)malloc(sizeof(t_fdf));
-	read_file
+	read_file(argv[1], data);
+	int i;
+	int j;
+	i = 0;
+	while(i < data->height)
+	{
+        j = 0;
+        while (j < data->width) {
+            ft_printf("%d ", data->z_coordinate[i][j]);
+            j++;
+        }
+        i++;
+    }
 }

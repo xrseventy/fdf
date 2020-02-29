@@ -26,4 +26,5 @@ typedef struct		s_fdf
 	void *win_ptr;
 }					t_fdf;
 
+void read_file(char *file_name, t_fdf *data);
 #endif
