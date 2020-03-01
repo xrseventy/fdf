@@ -6,7 +6,7 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/29 13:08:02 by gdoze             #+#    #+#             */
-/*   Updated: 2020/03/01 18:05:35 by gdoze            ###   ########.fr       */
+/*   Updated: 2020/03/01 19:55:49 by gdoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,18 +24,10 @@ int main(int argc, char **argv)
 
 	data = (t_fdf*)malloc(sizeof(t_fdf));
 	read_file(argv[1], data);
-	int i;
-	int j;
-	i = 0;
-	while(i < data->height)
-	{
-        j = 0;
-        while (j < data->width)
-        {
-            ft_printf("%2d ", data->z_coordinate[i][j]);
-            j++;
-        }
-		ft_printf("\n");
-        i++;
-    }
+	data->mlx_ptr = mlx_init(); //инициализация окна
+	data->win_ptr = mlx_new_window(data->mlx_ptr, 1000, 1000, "FDF"); //открыли окно с нужными параметрами
+
+	bresenham(10, 10, 600, 300, data);
+	mlx_key_hook(data->win_ptr, deal_key, NULL); //для бонусов
+	mlx_loop(data->mlx_ptr); //бесконечный цикл, что после рисовки окно не схлопнулось
 }
