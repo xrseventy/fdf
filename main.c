@@ -6,7 +6,7 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/29 13:08:02 by gdoze             #+#    #+#             */
-/*   Updated: 2020/03/01 19:55:49 by gdoze            ###   ########.fr       */
+/*   Updated: 2020/03/01 21:22:03 by gdoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ int main(int argc, char **argv)
 	data->mlx_ptr = mlx_init(); //инициализация окна
 	data->win_ptr = mlx_new_window(data->mlx_ptr, 1000, 1000, "FDF"); //открыли окно с нужными параметрами
 
-	bresenham(10, 10, 600, 300, data);
+	bresenham(10000, 10000, 6, 3, data);
+	//draw(data);
 	mlx_key_hook(data->win_ptr, deal_key, NULL); //для бонусов
 	mlx_loop(data->mlx_ptr); //бесконечный цикл, что после рисовки окно не схлопнулось
 }

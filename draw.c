@@ -6,12 +6,12 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 19:01:25 by gdoze             #+#    #+#             */
-/*   Updated: 2020/03/01 19:41:50 by gdoze            ###   ########.fr       */
+/*   Updated: 2020/03/01 21:07:54 by gdoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf_structs.h"
-#define MAX(a, b) (a > b ? a : b) //
+#define MAX1(a, b) (a > b ? a : b) //
 #define MOD(a) (a < 0) ? -a : a
 
 float mod(float i) //необходимо находить значение не по максимуму, а по модулю. на случай отрицаткльных значений
@@ -55,6 +55,9 @@ void	bresenham(float x, float y, float x1, float y1, t_fdf *data) //переда
 //		while (x < data->width)
 //		{
 //			bresenham(x, y, x + 1, y, data);
+//			bresenham(x, y, x, y + 1, data);
+//			x++;
 //		}
+//		y++;
 //	}
 //}
