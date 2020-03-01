@@ -20,7 +20,7 @@ typedef struct		s_fdf
 {
 	int width;
 	int height;
-	int z_coordinate; //z_matrix
+	int **z_coordinate; //z_matrix
 
 	void *mlx_ptr;
 	void *win_ptr;

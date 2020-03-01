@@ -6,7 +6,7 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/29 13:08:02 by gdoze             #+#    #+#             */
-/*   Updated: 2020/02/29 13:09:50 by gdoze            ###   ########.fr       */
+/*   Updated: 2020/03/01 18:05:35 by gdoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,12 @@ int main(int argc, char **argv)
 	while(i < data->height)
 	{
         j = 0;
-        while (j < data->width) {
-            ft_printf("%d ", data->z_coordinate[i][j]);
+        while (j < data->width)
+        {
+            ft_printf("%2d ", data->z_coordinate[i][j]);
             j++;
         }
+		ft_printf("\n");
         i++;
     }
 }

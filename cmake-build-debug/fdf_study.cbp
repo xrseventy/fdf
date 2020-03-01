@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="fdf_study"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/gdoze/fdf_study/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/gdoze/fdf_study/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/gdoze/fdf_study/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fdf_study">
+				<Option output="/Users/gdoze/fdf_study/cmake-build-debug/fdf_study" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gdoze/fdf_study/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/gdoze/fdf_study/."/>
+					<Add directory="/Users/gdoze/fdf_study/files"/>
+					<Add directory="/Users/gdoze/fdf_study/files/fdf"/>
+					<Add directory="/Users/gdoze/fdf_study/files/minilibx"/>
+					<Add directory="/Users/gdoze/fdf_study/files/minilibx_macos"/>
+					<Add directory="/Users/gdoze/fdf_study/files/minilibx_mms_20191025_beta"/>
+					<Add directory="/Users/gdoze/fdf_study/files/test_maps"/>
+					<Add directory="/Users/gdoze/fdf_study/libft"/>
+					<Add directory="/Users/gdoze/fdf_study/libft/array_int"/>
+					<Add directory="/Users/gdoze/fdf_study/libft/ft_printf"/>
+					<Add directory="/Users/gdoze/fdf_study/minilibx_macos"/>
+					<Add directory="/Users/gdoze/fdf_study/test_maps"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 fdf_study"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fdf_study/fast">
+				<Option output="/Users/gdoze/fdf_study/cmake-build-debug/fdf_study" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gdoze/fdf_study/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/gdoze/fdf_study/."/>
+					<Add directory="/Users/gdoze/fdf_study/files"/>
+					<Add directory="/Users/gdoze/fdf_study/files/fdf"/>
+					<Add directory="/Users/gdoze/fdf_study/files/minilibx"/>
+					<Add directory="/Users/gdoze/fdf_study/files/minilibx_macos"/>
+					<Add directory="/Users/gdoze/fdf_study/files/minilibx_mms_20191025_beta"/>
+					<Add directory="/Users/gdoze/fdf_study/files/test_maps"/>
+					<Add directory="/Users/gdoze/fdf_study/libft"/>
+					<Add directory="/Users/gdoze/fdf_study/libft/array_int"/>
+					<Add directory="/Users/gdoze/fdf_study/libft/ft_printf"/>
+					<Add directory="/Users/gdoze/fdf_study/minilibx_macos"/>
+					<Add directory="/Users/gdoze/fdf_study/test_maps"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 fdf_study/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gdoze/fdf_study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/gdoze/fdf_study/CMakeLists.txt">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/a.out">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/fdf_structs.h">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/FDF.pdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/fdf/fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/fdf/maps/42.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/fdf/maps/elem-col.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/fdf/maps/elem-fract.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/fdf/maps/elem.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/fdf/maps/elem2.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/fdf/maps/julia.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/fdf/maps/mars.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/fdf/maps/t1.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/fdf/maps/t2.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/=README=">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/Makefile">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/Makefile.gen">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/Makefile.mk">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/configure">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/libmlx_OpenBSD.a">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/libmlx_intel-mac.a">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/man/man3/mlx.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/man/man3/mlx_loop.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/man/man3/mlx_new_image.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/man/man3/mlx_new_window.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/man/man3/mlx_pixel_put.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx.h">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_clear_window.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_destroy_image.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_destroy_window.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_expose_hook.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_flush_event.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_get_color_value.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_get_data_addr.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_hook.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_init.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_int.h">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_int_anti_resize_win.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_int_do_nothing.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_int_get_visual.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_int_param_event.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_int_set_win_event_mask.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_int_str_to_wordtab.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_int_wait_first_expose.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_key_hook.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_lib_xpm.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_loop.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_loop_hook.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_mouse_hook.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_new_image.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_new_window.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_pixel_put.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_put_image_to_window.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_rgb.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_string_put.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_xpm.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/mlx_xpm.c.ok">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/rgb2c.pl">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/test/Makefile.gen">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/test/Makefile.mk">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/test/main.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/test/new_win.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/test/open.xpm">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/test/open24.xpm">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx/test/open30.xpm">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/Makefile">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/_README_">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/font.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/font.xcf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/man/man1/mlx.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/man/man1/mlx_loop.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/man/man1/mlx_new_image.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/man/man1/mlx_new_window.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/man/man1/mlx_pixel_put.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/man/man3/mlx.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/man/man3/mlx_loop.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/man/man3/mlx_new_image.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/man/man3/mlx_new_window.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/man/man3/mlx_pixel_put.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/mlx.h">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/mlx_init_loop.m">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/mlx_int.h">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/mlx_int_str_to_wordtab.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/mlx_new_image.m">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/mlx_new_window.h">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/mlx_new_window.m">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/mlx_rgb.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/mlx_shaders.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_macos/mlx_xpm.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_mms_20191025_beta/Makefile">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_mms_20191025_beta/font.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_mms_20191025_beta/interface.swift">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_mms_20191025_beta/mlx.h">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_mms_20191025_beta/mlx_image.swift">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_mms_20191025_beta/mlx_init.swift">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_mms_20191025_beta/mlx_png.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_mms_20191025_beta/mlx_rgb.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_mms_20191025_beta/mlx_string_put.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_mms_20191025_beta/mlx_window.swift">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/minilibx_mms_20191025_beta/mlx_xpm.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/sources.tgz">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/test_maps/10-2.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/test_maps/10-70.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/test_maps/100-6.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/test_maps/20-60.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/test_maps/42.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/test_maps/50-4.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/test_maps/basictest.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/test_maps/elem.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/test_maps/mars.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/test_maps/pentenegpos.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/test_maps/plat.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/test_maps/pnp_flat.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/test_maps/pylone.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/test_maps/pyra.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/files/test_maps/pyramide.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/Makefile">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/README.md">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/array_int/arr_add.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/array_int/arr_cat.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/array_int/arr_del.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/array_int/arr_get.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/array_int/arr_len.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/array_int/arr_new.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/array_int/arr_print.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/array_int/arr_set.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/array_int/array_int.h">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/array_int/check_arr_input.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/author">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_arrays.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_atoi.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_atoi_long.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_bzero.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_ftoa.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_is_integer.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_isalnum.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_isalpha.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_isascii.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_isdigit.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_isprint.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_itoa.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_itoa_base.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_itoa_big.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_lstadd.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_lstdel.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_lstdelone.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_lstiter.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_lstmap.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_lstnew.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_memalloc.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_memccpy.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_memchr.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_memcmp.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_memcpy.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_memdel.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_memdup.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_memmove.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_memset.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_printf/color_redactor.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_printf/digit_redactor.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_printf/flag_analazer.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_printf/ft_printf.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_printf/ft_printf.h">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_printf/ft_sprintf.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_printf/specifier.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_printf/str_redactor.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_putchar.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_putchar_fd.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_putendl.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_putendl_fd.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_putnbr.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_putnbr_fd.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_putstr.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_putstr_fd.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_stradd.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strcat.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strchr.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strclr.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strcmp.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strcpy.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strdel.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strdup.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strequ.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strindex.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_striter.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_striteri.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strjoin.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strjoin_free.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strlcat.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strlen.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strlower.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strmap.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strmapi.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strncat.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strncmp.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strncpy.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strnequ.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strnew.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strnstr.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strrchr.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strsplit.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strstr.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strsub.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strtrim.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_strupper.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_swap.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_swapi.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_tolower.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_toupper.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/ft_wdcounter.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/get_next_line.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/libft.a">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/libft/libft.h">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/main.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/Makefile">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/_README_">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/font.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/font.xcf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/man/man1/mlx.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/man/man1/mlx_loop.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/man/man1/mlx_new_image.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/man/man1/mlx_new_window.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/man/man1/mlx_pixel_put.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/man/man3/mlx.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/man/man3/mlx_loop.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/man/man3/mlx_new_image.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/man/man3/mlx_new_window.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/man/man3/mlx_pixel_put.1">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/mlx.h">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/mlx_init_loop.m">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/mlx_int.h">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/mlx_int_str_to_wordtab.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/mlx_new_image.m">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/mlx_new_window.h">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/mlx_new_window.m">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/mlx_rgb.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/mlx_shaders.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/minilibx_macos/mlx_xpm.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/read_file.c">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/test_maps/10-2.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/test_maps/10-70.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/test_maps/100-6.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/test_maps/20-60.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/test_maps/42.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/test_maps/50-4.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/test_maps/basictest.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/test_maps/elem.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/test_maps/mars.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/test_maps/pentenegpos.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/test_maps/plat.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/test_maps/pnp_flat.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/test_maps/pylone.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/test_maps/pyra.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/test_maps/pyramide.fdf">
+			<Option target="fdf_study"/>
+		</Unit>
+		<Unit filename="/Users/gdoze/fdf_study/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

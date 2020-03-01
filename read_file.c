@@ -54,6 +54,7 @@ void fill_matrix(int *z_string, char *line)
     {
         z_string[i] = ft_atoi(nums[i]); //записываем в массив переводя в цифры
         free(nums[i]);
+        i++;
     }
     free(nums);
 }
@@ -68,15 +69,15 @@ void read_file(char *file_name, t_fdf *data)
 	data->z_coordinate = (int **)malloc(sizeof(int *) * (data->height + 1)); //память под массив строчек
 	i = 0;
 	while  (i <= data->height)
-	    data->z_coordinate[i++] =  (int*)malloc(sizeof(int) * (data->height + 1)); //память под каждую строчку
+	    data->z_coordinate[i++] =  (int*)malloc(sizeof(int) * (data->width + 1)); //память под каждую строчку
 	fd = open(file_name, O_RDONLY, 0);
 	i = 0;
-	while ( get_next_line(fd, &string))
+	while (get_next_line(fd, &string))
     {
-	    fill_matrix(data->z_coordinate, string); //происходить запись
+	    fill_matrix(data->z_coordinate[i], string); //происходить запись
 	    free(string);
 	    i++;
     }
 	close(fd);
-    data->z_coordinate = NULL;
+    data->z_coordinate[i] = NULL;
 }
