@@ -6,7 +6,7 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/29 13:08:02 by gdoze             #+#    #+#             */
-/*   Updated: 2020/03/02 15:23:41 by gdoze            ###   ########.fr       */
+/*   Updated: 2020/03/02 15:24:21 by gdoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int main(int argc, char **argv) {
 //	int j;
 
 	//i = 0;
-	data =  (t_fdf *)malloc(sizeof(t_fdf));
+	data = (t_fdf *)malloc(sizeof(t_fdf));
 	read_file(argv[1], data);
 	if(argc < 1)
 		exit(0);

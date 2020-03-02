@@ -6,7 +6,7 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 19:01:25 by gdoze             #+#    #+#             */
-/*   Updated: 2020/03/02 15:00:53 by gdoze            ###   ########.fr       */
+/*   Updated: 2020/03/02 15:24:36 by gdoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ void    draw(t_fdf *data)
 		while (x < data->width)
 		{
 			if (x < data->width - 1)
-				bresenham(x, y, x +1, y, data);//горизонтальная линия
+				bresenham(x, y, x + 1, y, data);//горизонтальная линия
 			if (y < data->height - 1)
 				bresenham(x, y, x, y + 1, data);//веритикальная линия
 			x++;
