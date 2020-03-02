@@ -6,7 +6,7 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/29 13:08:02 by gdoze             #+#    #+#             */
-/*   Updated: 2020/03/02 15:24:21 by gdoze            ###   ########.fr       */
+/*   Updated: 2020/03/02 17:17:03 by gdoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,31 +40,21 @@ int     deal_key(int key, t_fdf *data) //бонусная часть для кн
 int main(int argc, char **argv) {
 
 	t_fdf *data;
-//	int i;
-//	int j;
+	int fd;
 
-	//i = 0;
-	data = (t_fdf *)malloc(sizeof(t_fdf));
-	read_file(argv[1], data);
-	if(argc < 1)
-		exit(0);
-//	while(i < data->height)
-//	{
-//		j = 0;
-//		while(j < data->width)
-//		{
-//			printf("%2d ", data->z_coordinate[i][j]);
-//			j++;
-//		}
-//		printf("\n");
-//		i++;
-//	}
-	data->mlx_ptr = mlx_init();
-	data->win_ptr = mlx_new_window(data->mlx_ptr, 600, 600, "FDF");
-	data->zoom = 20;
-	//bresenham(10, 10, 600, 300, data);
-	draw(data);
-//	mlx_pixel_put(data->mlx_ptr, data->win_ptr, (int)x, (int)y, #color);
-	mlx_key_hook(data->win_ptr, deal_key, data); //для бонусов
-	mlx_loop(data->mlx_ptr); //бесконечный цикл, что после рисовки окно не схлопнулось
+	if(argc == 2)
+	{
+		if (!((fd = open(argv[1], O_RDONLY)) >= 0))
+			ft_putstr("usage: ./fdf map.fdf\n");
+		data = (t_fdf *)malloc(sizeof(t_fdf));
+		read_file(*++argv, data);
+		data->mlx_ptr = mlx_init();
+		data->win_ptr = mlx_new_window(data->mlx_ptr, 600, 600, "FDF");
+		data->zoom = 1;
+		draw(data);
+		mlx_key_hook(data->win_ptr, deal_key, data); //для бонусов
+		mlx_loop(data->mlx_ptr); //бесконечный цикл, что после рисовки окно не схлопнулось
+		close(fd);
+	}
+	return(0);
 }
