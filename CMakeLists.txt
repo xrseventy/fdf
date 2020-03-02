@@ -4,12 +4,12 @@ project(fdf_study)
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
-include_directories(files)
-include_directories(files/fdf)
-include_directories(files/minilibx)
-include_directories(files/minilibx_macos)
-include_directories(files/minilibx_mms_20191025_beta)
-include_directories(files/test_maps)
+include_directories(file)
+include_directories(file/fdf)
+include_directories(file/minilibx)
+include_directories(file/minilibx_macos)
+include_directories(file/minilibx_mms_20191025_beta)
+include_directories(file/test_maps)
 include_directories(libft)
 include_directories(libft/array_int)
 include_directories(libft/ft_printf)
@@ -17,119 +17,119 @@ include_directories(minilibx_macos)
 include_directories(test_maps)
 
 add_executable(fdf_study
-        files/fdf/maps/42.fdf
-        files/fdf/maps/elem-col.fdf
-        files/fdf/maps/elem-fract.fdf
-        files/fdf/maps/elem.fdf
-        files/fdf/maps/elem2.fdf
-        files/fdf/maps/julia.fdf
-        files/fdf/maps/mars.fdf
-        files/fdf/maps/t1.fdf
-        files/fdf/maps/t2.fdf
-        files/fdf/fdf
-        files/minilibx/man/man3/mlx.1
-        files/minilibx/man/man3/mlx_loop.1
-        files/minilibx/man/man3/mlx_new_image.1
-        files/minilibx/man/man3/mlx_new_window.1
-        files/minilibx/man/man3/mlx_pixel_put.1
-        files/minilibx/test/main.c
-        files/minilibx/test/Makefile.gen
-        files/minilibx/test/Makefile.mk
-        files/minilibx/test/new_win.c
-        files/minilibx/test/open.xpm
-        files/minilibx/test/open24.xpm
-        files/minilibx/test/open30.xpm
-        files/minilibx/=README=
-        files/minilibx/configure
-        files/minilibx/libmlx_intel-mac.a
-        files/minilibx/libmlx_OpenBSD.a
-        files/minilibx/Makefile
-        files/minilibx/Makefile.gen
-        files/minilibx/Makefile.mk
-        files/minilibx/mlx.h
-        files/minilibx/mlx_clear_window.c
-        files/minilibx/mlx_destroy_image.c
-        files/minilibx/mlx_destroy_window.c
-        files/minilibx/mlx_expose_hook.c
-        files/minilibx/mlx_flush_event.c
-        files/minilibx/mlx_get_color_value.c
-        files/minilibx/mlx_get_data_addr.c
-        files/minilibx/mlx_hook.c
-        files/minilibx/mlx_init.c
-        files/minilibx/mlx_int.h
-        files/minilibx/mlx_int_anti_resize_win.c
-        files/minilibx/mlx_int_do_nothing.c
-        files/minilibx/mlx_int_get_visual.c
-        files/minilibx/mlx_int_param_event.c
-        files/minilibx/mlx_int_set_win_event_mask.c
-        files/minilibx/mlx_int_str_to_wordtab.c
-        files/minilibx/mlx_int_wait_first_expose.c
-        files/minilibx/mlx_key_hook.c
-        files/minilibx/mlx_lib_xpm.c
-        files/minilibx/mlx_loop.c
-        files/minilibx/mlx_loop_hook.c
-        files/minilibx/mlx_mouse_hook.c
-        files/minilibx/mlx_new_image.c
-        files/minilibx/mlx_new_window.c
-        files/minilibx/mlx_pixel_put.c
-        files/minilibx/mlx_put_image_to_window.c
-        files/minilibx/mlx_rgb.c
-        files/minilibx/mlx_string_put.c
-        files/minilibx/mlx_xpm.c
-        files/minilibx/mlx_xpm.c.ok
-        files/minilibx/rgb2c.pl
-        files/minilibx_macos/man/man1/mlx.1
-        files/minilibx_macos/man/man1/mlx_loop.1
-        files/minilibx_macos/man/man1/mlx_new_image.1
-        files/minilibx_macos/man/man1/mlx_new_window.1
-        files/minilibx_macos/man/man1/mlx_pixel_put.1
-        files/minilibx_macos/man/man3/mlx.1
-        files/minilibx_macos/man/man3/mlx_loop.1
-        files/minilibx_macos/man/man3/mlx_new_image.1
-        files/minilibx_macos/man/man3/mlx_new_window.1
-        files/minilibx_macos/man/man3/mlx_pixel_put.1
-        files/minilibx_macos/_README_
-        files/minilibx_macos/font.c
-        files/minilibx_macos/font.xcf
-        files/minilibx_macos/Makefile
-        files/minilibx_macos/mlx.h
-        files/minilibx_macos/mlx_init_loop.m
-        files/minilibx_macos/mlx_int.h
-        files/minilibx_macos/mlx_int_str_to_wordtab.c
-        files/minilibx_macos/mlx_new_image.m
-        files/minilibx_macos/mlx_new_window.h
-        files/minilibx_macos/mlx_new_window.m
-        files/minilibx_macos/mlx_rgb.c
-        files/minilibx_macos/mlx_shaders.c
-        files/minilibx_macos/mlx_xpm.c
-        files/minilibx_mms_20191025_beta/font.c
-        files/minilibx_mms_20191025_beta/interface.swift
-        files/minilibx_mms_20191025_beta/Makefile
-        files/minilibx_mms_20191025_beta/mlx.h
-        files/minilibx_mms_20191025_beta/mlx_image.swift
-        files/minilibx_mms_20191025_beta/mlx_init.swift
-        files/minilibx_mms_20191025_beta/mlx_png.c
-        files/minilibx_mms_20191025_beta/mlx_rgb.c
-        files/minilibx_mms_20191025_beta/mlx_string_put.c
-        files/minilibx_mms_20191025_beta/mlx_window.swift
-        files/minilibx_mms_20191025_beta/mlx_xpm.c
-        files/test_maps/10-2.fdf
-        files/test_maps/10-70.fdf
-        files/test_maps/100-6.fdf
-        files/test_maps/20-60.fdf
-        files/test_maps/42.fdf
-        files/test_maps/50-4.fdf
-        files/test_maps/basictest.fdf
-        files/test_maps/elem.fdf
-        files/test_maps/mars.fdf
-        files/test_maps/pentenegpos.fdf
-        files/test_maps/plat.fdf
-        files/test_maps/pnp_flat.fdf
-        files/test_maps/pylone.fdf
-        files/test_maps/pyra.fdf
-        files/test_maps/pyramide.fdf
-        files/FDF.pdf
-        files/sources.tgz
+        file/fdf/maps/42.fdf
+        file/fdf/maps/elem-col.fdf
+        file/fdf/maps/elem-fract.fdf
+        file/fdf/maps/elem.fdf
+        file/fdf/maps/elem2.fdf
+        file/fdf/maps/julia.fdf
+        file/fdf/maps/mars.fdf
+        file/fdf/maps/t1.fdf
+        file/fdf/maps/t2.fdf
+        file/fdf/fdf
+        file/minilibx/man/man3/mlx.1
+        file/minilibx/man/man3/mlx_loop.1
+        file/minilibx/man/man3/mlx_new_image.1
+        file/minilibx/man/man3/mlx_new_window.1
+        file/minilibx/man/man3/mlx_pixel_put.1
+        file/minilibx/test/main.c
+        file/minilibx/test/Makefile.gen
+        file/minilibx/test/Makefile.mk
+        file/minilibx/test/new_win.c
+        file/minilibx/test/open.xpm
+        file/minilibx/test/open24.xpm
+        file/minilibx/test/open30.xpm
+        file/minilibx/=README=
+        file/minilibx/configure
+        file/minilibx/libmlx_intel-mac.a
+        file/minilibx/libmlx_OpenBSD.a
+        file/minilibx/Makefile
+        file/minilibx/Makefile.gen
+        file/minilibx/Makefile.mk
+        file/minilibx/mlx.h
+        file/minilibx/mlx_clear_window.c
+        file/minilibx/mlx_destroy_image.c
+        file/minilibx/mlx_destroy_window.c
+        file/minilibx/mlx_expose_hook.c
+        file/minilibx/mlx_flush_event.c
+        file/minilibx/mlx_get_color_value.c
+        file/minilibx/mlx_get_data_addr.c
+        file/minilibx/mlx_hook.c
+        file/minilibx/mlx_init.c
+        file/minilibx/mlx_int.h
+        file/minilibx/mlx_int_anti_resize_win.c
+        file/minilibx/mlx_int_do_nothing.c
+        file/minilibx/mlx_int_get_visual.c
+        file/minilibx/mlx_int_param_event.c
+        file/minilibx/mlx_int_set_win_event_mask.c
+        file/minilibx/mlx_int_str_to_wordtab.c
+        file/minilibx/mlx_int_wait_first_expose.c
+        file/minilibx/mlx_key_hook.c
+        file/minilibx/mlx_lib_xpm.c
+        file/minilibx/mlx_loop.c
+        file/minilibx/mlx_loop_hook.c
+        file/minilibx/mlx_mouse_hook.c
+        file/minilibx/mlx_new_image.c
+        file/minilibx/mlx_new_window.c
+        file/minilibx/mlx_pixel_put.c
+        file/minilibx/mlx_put_image_to_window.c
+        file/minilibx/mlx_rgb.c
+        file/minilibx/mlx_string_put.c
+        file/minilibx/mlx_xpm.c
+        file/minilibx/mlx_xpm.c.ok
+        file/minilibx/rgb2c.pl
+        file/minilibx_macos/man/man1/mlx.1
+        file/minilibx_macos/man/man1/mlx_loop.1
+        file/minilibx_macos/man/man1/mlx_new_image.1
+        file/minilibx_macos/man/man1/mlx_new_window.1
+        file/minilibx_macos/man/man1/mlx_pixel_put.1
+        file/minilibx_macos/man/man3/mlx.1
+        file/minilibx_macos/man/man3/mlx_loop.1
+        file/minilibx_macos/man/man3/mlx_new_image.1
+        file/minilibx_macos/man/man3/mlx_new_window.1
+        file/minilibx_macos/man/man3/mlx_pixel_put.1
+        file/minilibx_macos/_README_
+        file/minilibx_macos/font.c
+        file/minilibx_macos/font.xcf
+        file/minilibx_macos/Makefile
+        file/minilibx_macos/mlx.h
+        file/minilibx_macos/mlx_init_loop.m
+        file/minilibx_macos/mlx_int.h
+        file/minilibx_macos/mlx_int_str_to_wordtab.c
+        file/minilibx_macos/mlx_new_image.m
+        file/minilibx_macos/mlx_new_window.h
+        file/minilibx_macos/mlx_new_window.m
+        file/minilibx_macos/mlx_rgb.c
+        file/minilibx_macos/mlx_shaders.c
+        file/minilibx_macos/mlx_xpm.c
+        file/minilibx_mms_20191025_beta/font.c
+        file/minilibx_mms_20191025_beta/interface.swift
+        file/minilibx_mms_20191025_beta/Makefile
+        file/minilibx_mms_20191025_beta/mlx.h
+        file/minilibx_mms_20191025_beta/mlx_image.swift
+        file/minilibx_mms_20191025_beta/mlx_init.swift
+        file/minilibx_mms_20191025_beta/mlx_png.c
+        file/minilibx_mms_20191025_beta/mlx_rgb.c
+        file/minilibx_mms_20191025_beta/mlx_string_put.c
+        file/minilibx_mms_20191025_beta/mlx_window.swift
+        file/minilibx_mms_20191025_beta/mlx_xpm.c
+        file/test_maps/10-2.fdf
+        file/test_maps/10-70.fdf
+        file/test_maps/100-6.fdf
+        file/test_maps/20-60.fdf
+        file/test_maps/42.fdf
+        file/test_maps/50-4.fdf
+        file/test_maps/basictest.fdf
+        file/test_maps/elem.fdf
+        file/test_maps/mars.fdf
+        file/test_maps/pentenegpos.fdf
+        file/test_maps/plat.fdf
+        file/test_maps/pnp_flat.fdf
+        file/test_maps/pylone.fdf
+        file/test_maps/pyra.fdf
+        file/test_maps/pyramide.fdf
+        file/FDF.pdf
+        file/sources.tgz
         libft/array_int/arr_add.c
         libft/array_int/arr_cat.c
         libft/array_int/arr_del.c
@@ -266,8 +266,7 @@ add_executable(fdf_study
         test_maps/pylone.fdf
         test_maps/pyra.fdf
         test_maps/pyramide.fdf
-        a.out
         CMakeLists.txt
-        fdf_structs.h
-        main.c
-        read_file.c)
+        includes/fdf_structs.h
+        src/main.c
+        src/read_file.c)
