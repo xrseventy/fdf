@@ -79,5 +79,5 @@ void read_file(char *file_name, t_fdf *data)
 	    i++;
     }
 	close(fd);
-    data->z_coordinate[i] = NULL;
+	data->z_coordinate[i] = NULL;
 }

@@ -30,7 +30,7 @@ void    bresenham(float x, float y, float x1, float y1, t_fdf *data)
 {
 	float x_step;
 	float y_step;
-	float max;
+	int max;
 	int z; //переменные для цвета
 	int z1;
 
@@ -90,7 +90,7 @@ void    draw(t_fdf *data)
 		while (x < data->width)
 		{
 			if (x < data->width - 1)
-				bresenham(x, y, x +1, y, data);//горизонтальная линия
+				bresenham(x, y, x + 1, y, data);//горизонтальная линия
 			if (y < data->height - 1)
 				bresenham(x, y, x, y + 1, data);//веритикальная линия
 			x++;

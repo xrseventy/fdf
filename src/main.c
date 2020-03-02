@@ -12,6 +12,19 @@
 
 #include "../includes/fdf_structs.h"
 
+void	set_default(t_fdf *data)
+{
+	data->zoom = 30;
+	//data->z_zoom = 1;
+	//data->is_iso = 100;
+	data->angle = 0.523599;
+	data->window = 1000;
+	data->shift_x = data->window / 2;
+	data->shift_y = data->window / 2;
+	data->mlx_ptr = mlx_init();
+	data->win_ptr =\
+	mlx_new_window(data->mlx_ptr, data->window, data->window, "fdf");
+}
 
 int     deal_key(int key, t_fdf *data) //бонусная часть для кнопок
 {
@@ -39,21 +52,19 @@ int     deal_key(int key, t_fdf *data) //бонусная часть для кн
 
 int main(int argc, char **argv) {
 
-	t_fdf *data;
-	int fd;
+	t_fdf 	*data;
+	int		fd;
 
-	if(argc == 2)
+	if (argc == 2)
 	{
 		if (!((fd = open(argv[1], O_RDONLY)) >= 0))
 			ft_putstr("usage: ./fdf map.fdf\n");
 		data = (t_fdf *)malloc(sizeof(t_fdf));
 		read_file(*++argv, data);
-		data->mlx_ptr = mlx_init();
-		data->win_ptr = mlx_new_window(data->mlx_ptr, 600, 600, "FDF");
-		data->zoom = 1;
+		set_default(data);
 		draw(data);
 		mlx_key_hook(data->win_ptr, deal_key, data); //для бонусов
-		mlx_loop(data->mlx_ptr); //бесконечный цикл, что после рисовки окно не схлопнулось
+		mlx_loop(data->mlx_ptr);//бесконечный цикл, что после рисовки окно не схлопнулось
 		close(fd);
 	}
 	return(0);
