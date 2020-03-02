@@ -18,7 +18,7 @@
 #include "../minilibx_macos/mlx.h"
 #include <math.h>
 
-typedef struct
+typedef struct		s_fdf
 {
 	int width;
 	int height;
