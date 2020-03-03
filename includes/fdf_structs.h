@@ -13,7 +13,7 @@
 #ifndef FDF_STRUCTS_H
 # define FDF_STRUCTS_H
 
-# include "../libft/libft.h"
+# include "../libft/includes/libft.h"
 #include <stdio.h>
 #include "../minilibx_macos/mlx.h"
 #include <math.h>
