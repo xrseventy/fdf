@@ -1,4 +1,4 @@
- /* ************************************************************************** */
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   read_file.c                                        :+:      :+:    :+:   */
@@ -6,7 +6,7 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/29 13:11:06 by gdoze             #+#    #+#             */
-/*   Updated: 2020/02/29 13:21:48 by gdoze            ###   ########.fr       */
+/*   Updated: 2020/03/04 19:18:56 by gdoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,71 +58,26 @@ void fill_matrix(int *z_string, char *line)
     }
     free(nums);
 }
-//void read_file(char *file_name, t_fdf *data)
-//{
-//	int fd;
-//	char *string;
-//	int i;
-//	int n;
-//
-//	data->height = get_height(file_name); //получили высоту и ширину
-//	data->width = get_width(file_name);
-//	data->z_coordinate = (int **)malloc(sizeof(int *) * (data->height + 1)); //память под массив строчек
-//	i = 0;
-//	while  (i <= data->height)
-//	    data->z_coordinate[i++] =  (int*)malloc(sizeof(int) * (data->width + 1)); //память под каждую строчку
-//	fd = open(file_name, O_RDONLY, 0);
-//	i = 0;
-//	while (get_next_line(fd, &string))
-//    {
-//		if (n != fill_matrix(data->z_coordinate[i++], string))
-//		{
-//			ft_putstr("usage: invalid map.fdf\n");
-//			exit(1);
-//		}
-//		free(string);
-////	    fill_matrix(data->z_coordinate[i], string); //происходит запись
-//	    free(string);
-//	    i++;
-//    }
-//	close(fd);
-//	data->z_coordinate[i] = NULL;
-//}
+void read_file(char *file_name, t_fdf *data)
+{
+	int fd;
+	char *string;
+	int i;
 
- void	read_line(int fd, t_fdf *data)
- {
-	 int		i;
-	 int		n;
-	 char	*string;
-
-	 i = 0;
-	 get_next_line(fd, &string);
-	 n = fill_matrix(data->z_coordinate[i++], string);
-	 while (get_next_line(fd, &string))
-	 {
-		 if (n != fill_matrix(data->z_coordinate[i++], string))
-		 {
-			 ft_putstr("usage: invalid map.fdf\n");
-			 exit(1);
-		 }
-		 free(string);
-	 }
-	 free(string);
- }
-
- void	read_file(char *file_name, t_fdf *data)
- {
-	 int		fd;
-	 int		i;
-
-	 data->height = get_height(file_name);
-	 data->width = get_width(file_name);
-	 data->z_coordinate = (int **)malloc(sizeof(int *) * (data->height + 1));
-	 i = 0;
-	 while (i <= data->height)
-		 data->z_coordinate[i++] = (int *)malloc(sizeof(int) * (data->width + 1));
-	 if (!((fd = open(file_name, O_RDONLY, 0)) >= 0))
-		 ft_putstr("usage: ./fdf map.fdf\n");
-	 read_line(fd, data);
-	 close(fd);
- }
+	data->height = get_height(file_name); //получили высоту и ширину
+	data->width = get_width(file_name);
+	data->z_coordinate = (int **)malloc(sizeof(int *) * (data->height + 1)); //память под массив строчек
+	i = 0;
+	while  (i <= data->height)
+	    data->z_coordinate[i++] =  (int*)malloc(sizeof(int) * (data->width + 1)); //память под каждую строчку
+	fd = open(file_name, O_RDONLY, 0);
+	i = 0;
+	while (get_next_line(fd, &string))
+    {
+		fill_matrix(data->z_coordinate[i], string); //происходит запись
+	    free(string);
+	    i++;
+    }
+	close(fd);
+	data->z_coordinate[i] = NULL;
+}

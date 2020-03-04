@@ -45,6 +45,12 @@ void deal_key_plus(int key, t_fdf *data)
 		data->angle += 0.05;
 	if (key == NUM_PAD_6 || key == MAIN_PAD_6)
 		data->angle -= 0.05;
+	if (key == MAIN_PAD_ESC)
+	{
+		mlx_destroy_window(data->mlx_ptr, data->win_ptr);
+		free(data);
+		exit(0);
+	}
 }
 
 int     deal_key(int key, t_fdf *data) //бонусная часть для кнопок

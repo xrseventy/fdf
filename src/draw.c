@@ -6,7 +6,7 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 19:01:25 by gdoze             #+#    #+#             */
-/*   Updated: 2020/03/02 15:00:53 by gdoze            ###   ########.fr       */
+/*   Updated: 2020/03/04 19:27:06 by gdoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@ float mod(float i) //необходимо находить значение не
 	return (i < 0) ? -i : i;
 }
 
-//3D
-//void    isometric(float *x, float *y, int z)
-//{
-//	*x = (*x - *y) * cos(0.8);
-//	*y = (*x + *y) * sin(0.8) - z;
-//}
+
+void    isometric(float *x, float *y, int z)
+{
+	*x = (*x - *y) * cos(0.8);
+	*y = (*x + *y) * sin(0.8) - z;
+}
 
 void    bresenham(float x, float y, float x1, float y1, t_fdf *data)
 {
@@ -47,8 +47,8 @@ void    bresenham(float x, float y, float x1, float y1, t_fdf *data)
 //	data->color = (z1) ? 0xe80c0c : 0xffffff;
 
 //to 3d
-//	isometric(&x, &y, z);
-//	isometric(&x1, &y1, z1);
+	isometric(&x, &y, z);
+	isometric(&x1, &y1, z1);
 
 	x += data->shift_x;
 	y += data->shift_y;

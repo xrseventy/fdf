@@ -6,15 +6,15 @@
 /*   By: ltalitha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 20:00:59 by ltalitha          #+#    #+#             */
-/*   Updated: 2020/03/03 20:01:01 by ltalitha         ###   ########.fr       */
+/*   Updated: 2020/03/04 19:24:32 by gdoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fdf.h"
+#include "fdf_structs.h"
 
-int		isometric(float *x, float *y, int z, float angle)
-{
-	*x = (*x - *y) * cos(angle);
-	*y = (*x + *y) * sin(angle) - z;
-	return (1);
-}
+//int		isometric(float *x, float *y, int z, float angle)
+//{
+//	*x = (*x - *y) * cos(angle);
+//	*y = (*x + *y) * sin(angle) - z;
+//	return (1);
+//}

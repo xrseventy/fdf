@@ -6,7 +6,7 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/29 13:01:05 by gdoze             #+#    #+#             */
-/*   Updated: 2020/03/02 15:22:41 by gdoze            ###   ########.fr       */
+/*   Updated: 2020/03/04 19:26:31 by gdoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	bresenham(float x, float y, float x1, float y1, t_fdf *data);
 void	draw(t_fdf *data);
 void	set_default(t_fdf *data);
 void 	deal_key_plus(int key, t_fdf *data);
-int		isometric(float *x, float *y, int z, float angle);
+//int		isometric(float *x, float *y, int z, float angle);
 void	read_line(int fd, t_fdf *data);
 
 
