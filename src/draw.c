@@ -20,11 +20,11 @@ float mod(float i) //необходимо находить значение не
 }
 
 //3D
-void    isometric(float *x, float *y, int z)
-{
-	*x = (*x - *y) * cos(0.8);
-	*y = (*x + *y) * sin(0.8) - z;
-}
+//void    isometric(float *x, float *y, int z)
+//{
+//	*x = (*x - *y) * cos(0.8);
+//	*y = (*x + *y) * sin(0.8) - z;
+//}
 
 void    bresenham(float x, float y, float x1, float y1, t_fdf *data)
 {
@@ -47,8 +47,8 @@ void    bresenham(float x, float y, float x1, float y1, t_fdf *data)
 //	data->color = (z1) ? 0xe80c0c : 0xffffff;
 
 //to 3d
-	isometric(&x, &y, z);
-	isometric(&x1, &y1, z1);
+//	isometric(&x, &y, z);
+//	isometric(&x1, &y1, z1);
 
 	x += data->shift_x;
 	y += data->shift_y;

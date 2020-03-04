@@ -13,10 +13,13 @@
 #ifndef FDF_STRUCTS_H
 # define FDF_STRUCTS_H
 
-# include "../libft/includes/libft.h"
-#include <stdio.h>
-#include "../minilibx_macos/mlx.h"
 #include <math.h>
+#include <stdio.h>
+#include <fcntl.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include "../libft/libft.h"
+#include "../minilibx_macos/mlx.h"
 
 typedef struct	s_fdf
 {
@@ -25,7 +28,7 @@ typedef struct	s_fdf
 	int			zoom;
 	int			color;
 	int			**z_coordinate;
-	//int			is_iso;
+	int			is_iso;
 	float		angle;
 	int			window;
 	int			shift_x;
@@ -33,11 +36,16 @@ typedef struct	s_fdf
 
 	void		*mlx_ptr;
 	void		*win_ptr;
-	//int			z_zoom;
+	int			z_zoom;
 }				t_fdf;
 
 void	read_file(char *file_name, t_fdf *data);
 void	bresenham(float x, float y, float x1, float y1, t_fdf *data);
 void	draw(t_fdf *data);
 void	set_default(t_fdf *data);
+void 	deal_key_plus(int key, t_fdf *data);
+int		isometric(float *x, float *y, int z, float angle);
+void	read_line(int fd, t_fdf *data);
+
+
 #endif
