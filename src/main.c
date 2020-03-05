@@ -6,7 +6,7 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/29 13:08:02 by gdoze             #+#    #+#             */
-/*   Updated: 2020/03/04 19:57:32 by gdoze            ###   ########.fr       */
+/*   Updated: 2020/03/05 11:51:53 by gdoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ void	set_default(t_fdf *data)
 	mlx_new_window(data->mlx_ptr, data->window, data->window, "fdf");
 }
 
+
 void deal_key_plus(int key, t_fdf *data)
 {
 	if (key == ARROW_RIGHT)
@@ -45,6 +46,10 @@ void deal_key_plus(int key, t_fdf *data)
 		data->angle += 0.05;
 	if (key == NUM_PAD_6 || key == MAIN_PAD_6)
 		data->angle -= 0.05;
+	if (key == NUM_PAD_8 || key == MAIN_PAD_8)
+		data->z_zoom += 1;
+	if (key == NUM_PAD_2 || key == MAIN_PAD_2)
+		data->z_zoom -= 1;
 	if (key == MAIN_PAD_ESC)
 	{
 		mlx_destroy_window(data->mlx_ptr, data->win_ptr);
@@ -55,7 +60,7 @@ void deal_key_plus(int key, t_fdf *data)
 
 int     deal_key(int key, t_fdf *data) //бонусная часть для кнопок
 {
-	printf("%d\n", key);
+	ft_printf("%d\n", key);
 	if (key == 126)
 		data->shift_y -=10;
 	if (key == 125)

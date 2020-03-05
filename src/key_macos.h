@@ -26,6 +26,7 @@
 # define NUM_PAD_PLUS		69
 # define NUM_PAD_MINUS		78
 # define MAIN_PAD_ESC		53
+# define WHITE_SPACE		49
 # define MAIN_PAD_2			19
 # define MAIN_PAD_4			21
 # define MAIN_PAD_5			23

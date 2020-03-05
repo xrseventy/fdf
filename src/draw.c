@@ -6,7 +6,7 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 19:01:25 by gdoze             #+#    #+#             */
-/*   Updated: 2020/03/05 10:14:34 by gdoze            ###   ########.fr       */
+/*   Updated: 2020/03/05 12:19:03 by gdoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,9 @@ void    bresenham(float x, float y, float x1, float y1, t_fdf *data)
 	int z; //переменные для цвета
 	int z1;
 
-	z = data->z_coordinate[(int)y][(int)x];
-	z1 = data->z_coordinate[(int)y1][(int)x1];
+	z = data->z_coordinate[(int)y][(int)x] * data->z_zoom;
+	z1 = data->z_coordinate[(int)y1][(int)x1] * data->z_zoom;
+
 	//добавляем zoom
 	x *= data->zoom;
 	y *= data->zoom;
@@ -50,15 +51,16 @@ void    bresenham(float x, float y, float x1, float y1, t_fdf *data)
 
 	//цвета либо красный, либо белый
 	data->color = (z || z1) ? 0x00FFFF : 0xffffff;
+	data->color = (z < 0 || z1 < 0) ? 0xFF0000 : data->color;
 //	data->color = (z1) ? 0xe80c0c : 0xffffff;
 
 //to 3d
 
-	isometric(&x, &y, z, data->angle);
-	isometric(&x1, &y1, z1, data->angle);
-
 //	isometric(&x, &y, z, data->angle);
 //	isometric(&x1, &y1, z1, data->angle);
+
+	if (data->is_iso && (isometric(&x, &y, z, data->angle)))
+		isometric(&x1, &y1, z1, data->angle);
 
 	x += data->shift_x;
 	y += data->shift_y;
