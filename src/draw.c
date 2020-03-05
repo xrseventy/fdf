@@ -6,13 +6,19 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 19:01:25 by gdoze             #+#    #+#             */
-/*   Updated: 2020/03/04 19:27:06 by gdoze            ###   ########.fr       */
+/*   Updated: 2020/03/05 10:14:34 by gdoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fdf_structs.h"
-#define MAX1(a, b) (a > b ? a : b) //
-#define MOD(a) (a < 0) ? -a : a
+//#define MAX1(a, b) (a > b ? a : b) //
+//#define MOD(a) (a < 0) ? -a : a
+
+
+int ft_max (a, b)
+{
+	return(a > b ? a : b);
+}
 
 float mod(float i) //необходимо находить значение не по максимуму, а по модулю. на случай отриц значений
 {
@@ -20,11 +26,11 @@ float mod(float i) //необходимо находить значение не
 }
 
 
-void    isometric(float *x, float *y, int z)
-{
-	*x = (*x - *y) * cos(0.8);
-	*y = (*x + *y) * sin(0.8) - z;
-}
+//void    isometric(float *x, float *y, int z)
+//{
+//	*x = (*x - *y) * cos(0.8);
+//	*y = (*x + *y) * sin(0.8) - z;
+//}
 
 void    bresenham(float x, float y, float x1, float y1, t_fdf *data)
 {
@@ -43,12 +49,16 @@ void    bresenham(float x, float y, float x1, float y1, t_fdf *data)
 	y1 *= data->zoom;
 
 	//цвета либо красный, либо белый
-	data->color = (z || z1) ? 0xe80c0c : 0xffffff;
+	data->color = (z || z1) ? 0x00FFFF : 0xffffff;
 //	data->color = (z1) ? 0xe80c0c : 0xffffff;
 
 //to 3d
-	isometric(&x, &y, z);
-	isometric(&x1, &y1, z1);
+
+	isometric(&x, &y, z, data->angle);
+	isometric(&x1, &y1, z1, data->angle);
+
+//	isometric(&x, &y, z, data->angle);
+//	isometric(&x1, &y1, z1, data->angle);
 
 	x += data->shift_x;
 	y += data->shift_y;
@@ -66,7 +76,7 @@ void    bresenham(float x, float y, float x1, float y1, t_fdf *data)
 //за каждый проход цикла нужно распечатывать пиксели, но шаг не более 1 пикселя. Чтобы не было разрыва
 //
 //	//каждый шаг нужно разделить на максимальное число
-	max = MAX1(mod(x_step), mod(y_step));
+	max = ft_max(mod(x_step), mod(y_step));
 	x_step /= max;
 	y_step /= max;
 

@@ -39,6 +39,7 @@ HEADERS = $(addprefix $(HEADERS_DIRECTORY), $(HEADERS_LIST))
 SOURCES_DIRECTORY = ./src/
 SOURCES_LIST = main.c\
 draw.c\
+isometric.c \
 	read_file.c
 SOURCES = $(addprefix $(SOURCES_DIRECTORY), $(SOURCES_LIST))
 

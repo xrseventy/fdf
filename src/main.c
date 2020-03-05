@@ -6,7 +6,7 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/29 13:08:02 by gdoze             #+#    #+#             */
-/*   Updated: 2020/03/02 17:18:35 by gdoze            ###   ########.fr       */
+/*   Updated: 2020/03/04 19:57:32 by gdoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ int main(int argc, char **argv) {
 		if (!((fd = open(argv[1], O_RDONLY)) >= 0))
 			ft_putstr("usage: ./fdf map.fdf\n");
 		data = (t_fdf *)malloc(sizeof(t_fdf));
-		read_file(*++argv, data);
+		read_file(argv[1], data);
 		set_default(data);
 		draw(data);
 		mlx_hook(data->win_ptr, 2, 0, deal_key, data); //для бонусов
