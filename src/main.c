@@ -6,7 +6,7 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/29 13:08:02 by gdoze             #+#    #+#             */
-/*   Updated: 2020/03/05 11:51:53 by gdoze            ###   ########.fr       */
+/*   Updated: 2020/03/06 19:00:01 by ltalitha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,10 @@ void	set_default(t_fdf *data)
 	data->shift_y = data->window / 2;
 	data->mlx_ptr = mlx_init();
 	data->win_ptr =\
-	mlx_new_window(data->mlx_ptr, data->window, data->window, "fdf");
+				   mlx_new_window(data->mlx_ptr, data->window, data->window, "fdf");
 }
 
-
-void deal_key_plus(int key, t_fdf *data)
+void	deal_key_plus(int key, t_fdf *data)/*26 lines!!!*/
 {
 	if (key == ARROW_RIGHT)
 		data->shift_x += 10;
@@ -58,26 +57,26 @@ void deal_key_plus(int key, t_fdf *data)
 	}
 }
 
-int     deal_key(int key, t_fdf *data) //бонусная часть для кнопок
+int		deal_key(int key, t_fdf *data) /*бонусная часть для кнопок*/
 {
 	ft_printf("%d\n", key);
 	if (key == 126)
-		data->shift_y -=10;
+		data->shift_y -= 10;
 	if (key == 125)
-		data->shift_y +=10;
+		data->shift_y += 10;
 	if (key == 123)
-		data->shift_x -=10;
+		data->shift_x -= 10;
 	if (key == 124)
-		data->shift_x +=10;
+		data->shift_x += 10;
 	deal_key_plus(key, data);
 	mlx_clear_window(data->mlx_ptr, data->win_ptr);
 	draw(data);
 	return (0);
 }
 
-int main(int argc, char **argv) {
-
-	t_fdf 	*data;
+int		main(int argc, char **argv)
+{
+	t_fdf	*data;
 	int		fd;
 
 	if (argc == 2)
@@ -88,9 +87,9 @@ int main(int argc, char **argv) {
 		read_file(argv[1], data);
 		set_default(data);
 		draw(data);
-		mlx_hook(data->win_ptr, 2, 0, deal_key, data); //для бонусов
-		mlx_loop(data->mlx_ptr);//бесконечный цикл, что после рисовки окно не схлопнулось
+		mlx_hook(data->win_ptr, 2, 0, deal_key, data); /*для бонусов*/
+		mlx_loop(data->mlx_ptr);/*бесконечный цикл, что после рисовки окно не схлопнулось*/
 		close(fd);
 	}
-	return(0);
+	return (0);
 }
