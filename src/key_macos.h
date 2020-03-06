@@ -6,12 +6,11 @@
 /*   By: ltalitha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 17:00:28 by ltalitha          #+#    #+#             */
-/*   Updated: 2020/03/03 17:00:31 by ltalitha         ###   ########.fr       */
+/*   Updated: 2020/03/06 19:17:00 by ltalitha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef KEY_MACOS_H
-
 # define KEY_MACOS_H
 
 # define ARROW_UP			126
