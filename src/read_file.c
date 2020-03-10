@@ -6,7 +6,7 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/29 13:11:06 by gdoze             #+#    #+#             */
-/*   Updated: 2020/03/06 18:53:00 by ltalitha         ###   ########.fr       */
+/*   Updated: 2020/03/10 16:10:54 by ltalitha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int		get_height(char *file_name)
 {
-	char *string;
-	int fd;
-	int height;
+	char	*string;
+	int		fd;
+	int		height;
 
 	fd = open(file_name, O_RDONLY, 0);
 	height = 0;
@@ -31,9 +31,9 @@ int		get_height(char *file_name)
 
 int		get_width(char *file_name)
 {
-	int width;
-	int fd;
-	char *string;
+	int		width;
+	int		fd;
+	char	*string;
 
 	fd = open(file_name, O_RDONLY, 0);
 	get_next_line(fd, &string);
@@ -46,7 +46,7 @@ int		get_width(char *file_name)
 void	fill_matrix(int *z_string, char *line)
 {
 	char	**nums;
-	int 	i;
+	int		i;
 
 	nums = ft_strsplit(line, ' '); /*делим строку*/
 	i = 0;
@@ -61,16 +61,16 @@ void	fill_matrix(int *z_string, char *line)
 
 void	read_file(char *file_name, t_fdf *data)
 {
-	int fd;
-	char *string;
-	int i;
+	int		fd;
+	char	*string;
+	int		i;
 
 	data->height = get_height(file_name); /*получили высоту и ширину*/
 	data->width = get_width(file_name);
-	data->z_coordinate = (int **)malloc(sizeof(int *) * (data->height + 1)); /*память под массив строчек*/
+	data->z_coordinate = (int **)malloc(sizeof(int *) * (data->height + 1)); /*память под массив строчек(убр для нормы)*/
 	i = 0;
 	while (i <= data->height)
-		data->z_coordinate[i++] = (int*)malloc(sizeof(int) * (data->width + 1)); /*память под каждую строчку*/
+		data->z_coordinate[i++] = (int*)malloc(sizeof(int) * (data->width + 1)); /*память под каждую строчку(убр для норм)*/
 	fd = open(file_name, O_RDONLY, 0);
 	i = 0;
 	while (get_next_line(fd, &string))

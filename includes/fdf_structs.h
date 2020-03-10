@@ -44,8 +44,8 @@ void	bresenham(float x, float y, float x1, float y1, t_fdf *data);
 void	draw(t_fdf *data);
 void	set_default(t_fdf *data);
 void 	deal_key_plus(int key, t_fdf *data);
+void	deal_esc(int key, t_fdf *data);
 int		isometric(float *x, float *y, int z, float angle);
 void	read_line(int fd, t_fdf *data);
-
 
 #endif

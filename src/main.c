@@ -23,8 +23,8 @@ void	set_default(t_fdf *data)
 	data->shift_x = data->window / 2;
 	data->shift_y = data->window / 2;
 	data->mlx_ptr = mlx_init();
-	data->win_ptr =\
-				   mlx_new_window(data->mlx_ptr, data->window, data->window, "fdf");
+	data->win_ptr = mlx_new_window(data->mlx_ptr,\
+	data->window, data->window, "fdf");
 }
 
 void	deal_key_plus(int key, t_fdf *data)/*26 lines!!!*/
@@ -49,6 +49,10 @@ void	deal_key_plus(int key, t_fdf *data)/*26 lines!!!*/
 		data->z_zoom += 1;
 	if (key == NUM_PAD_2 || key == MAIN_PAD_2)
 		data->z_zoom -= 1;
+}
+
+void	deal_esc(int key, t_fdf *data)
+{
 	if (key == MAIN_PAD_ESC)
 	{
 		mlx_destroy_window(data->mlx_ptr, data->win_ptr);
@@ -69,6 +73,7 @@ int		deal_key(int key, t_fdf *data) /*бонусная часть для кно�
 	if (key == 124)
 		data->shift_x += 10;
 	deal_key_plus(key, data);
+	deal_esc(key, data);
 	mlx_clear_window(data->mlx_ptr, data->win_ptr);
 	draw(data);
 	return (0);
