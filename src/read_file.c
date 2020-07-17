@@ -6,7 +6,7 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/29 13:11:06 by gdoze             #+#    #+#             */
-/*   Updated: 2020/07/17 13:19:41 by ltalitha         ###   ########.fr       */
+/*   Updated: 2020/07/17 18:01:25 by ltalitha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,11 +49,11 @@ void	fill_matrix(int *z_string, char *line)
 	char	**nums;
 	int		i;
 
-	nums = ft_strsplit(line, ' '); /*делим строку*/
+	nums = ft_strsplit(line, ' '); /* делим строку */
 	i = 0;
 	while (nums[i])
 	{
-		z_string[i] = ft_atoi(nums[i]); /*записываем в массив переводя в цифры*/
+		z_string[i] = ft_atoi(nums[i]); /* записываем в массив переводя в цифры */
 		free(nums[i]);
 		i++;
 	}

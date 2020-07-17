@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ltalitha <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/17 17:47:55 by ltalitha          #+#    #+#             */
+/*   Updated: 2020/07/17 18:15:21 by ltalitha         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 # define BUFF_SIZE 10
@@ -126,16 +138,5 @@ int				ft_printf(const char *format, ...);
 char			*ft_sprintf(const char *format, ...);
 int				ft_arrayfree(char **arr);
 int				ft_arraylen(char **arr);
-/*
-** Array int library
-*/
-int				*arr_new(char *arr);
-int				arr_len(int *arr);
-int				arr_get(int *arr, int index);
-void			arr_set(int *arr, int index, int nbr);
-void			arr_del(int *arr, int index, ...);
-void			arr_print(int *arr);
-void			arr_add(int **arr, int index, int nbr);
-void			arr_cat(int **arr, char *addon);
 
 #endif
