@@ -6,7 +6,7 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/29 13:11:06 by gdoze             #+#    #+#             */
-/*   Updated: 2020/03/10 16:10:54 by ltalitha         ###   ########.fr       */
+/*   Updated: 2020/07/17 13:19:41 by ltalitha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int		get_height(char *file_name)
 		height++;
 		free(string);
 	}
+	free(string);
 	close(fd);
 	return (height);
 }
@@ -79,6 +80,7 @@ void	read_file(char *file_name, t_fdf *data)
 		free(string);
 		i++;
 	}
+	free(string);
 	close(fd);
-	data->z_coordinate[i] = NULL;
+	//data->z_coordinate[i] = NULL;
 }
