@@ -6,20 +6,20 @@
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/29 13:01:05 by gdoze             #+#    #+#             */
-/*   Updated: 2020/07/17 17:59:14 by ltalitha         ###   ########.fr       */
+/*   Updated: 2020/07/20 19:37:18 by ltalitha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FDF_STRUCTS_H
 # define FDF_STRUCTS_H
 
-#include <math.h>
-#include <stdio.h>
-#include <fcntl.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include "../libft/libft.h"
-#include "../minilibx_macos/mlx.h"
+# include <math.h>
+# include <stdio.h>
+# include <fcntl.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include "../libft/libft.h"
+# include "../minilibx_macos/mlx.h"
 
 typedef struct	s_fdf
 {
