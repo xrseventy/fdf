@@ -32,7 +32,7 @@ float mod(float i) /*необходимо находить значение не
 	*y = (*x + *y) * sin(0.8) - z;
 }*/
 
-void    bresenham(float x, float y, float x1, float y1, t_fdf *data)
+void    bline(float x, float y, float x1, float y1, t_fdf *data)
 {
 	float x_step;
 	float y_step;
@@ -101,9 +101,9 @@ void    draw(t_fdf *data)
 		while (x < data->width)
 		{
 			if (x < data->width - 1)
-				bresenham(x, y, x + 1, y, data);/*горизонтальная линия*/
+				bline(x, y, x + 1, y, data);/*горизонтальная линия*/
 			if (y < data->height - 1)
-				bresenham(x, y, x, y + 1, data);/*веритикальная линия*/
+				bline(x, y, x, y + 1, data);/*веритикальная линия*/
 			x++;
 		}
 		y++;

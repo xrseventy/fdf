@@ -13,7 +13,7 @@
 #include "../includes/fdf_structs.h"
 #include "key_macos.h"
 
-void	set_default(t_fdf *data)
+void	default_value(t_fdf *data)
 {
 	data->zoom = 30;
 	data->z_zoom = 1;
@@ -27,7 +27,7 @@ void	set_default(t_fdf *data)
 			data->window, data->window, "fdf");
 }
 
-void	deal_key_plus(int key, t_fdf *data)
+void	keyboard_plus(int key, t_fdf *data)
 {
 	if (key == ARROW_RIGHT)
 		data->shift_x += 10;
@@ -51,7 +51,7 @@ void	deal_key_plus(int key, t_fdf *data)
 		data->z_zoom -= 1;
 }
 
-void	deal_esc(int key, t_fdf *data)
+void	key_esc(int key, t_fdf *data)
 {
 	if (key == MAIN_PAD_ESC)
 	{
@@ -61,7 +61,7 @@ void	deal_esc(int key, t_fdf *data)
 	}
 }
 
-int		deal_key(int key, t_fdf *data) /* бонусная часть для кнопок */
+int		keyboard(int key, t_fdf *data) /* бонусная часть для кнопок */
 {
 	ft_printf("%d\n", key);
 	if (key == 126)
@@ -72,8 +72,8 @@ int		deal_key(int key, t_fdf *data) /* бонусная часть для кно
 		data->shift_x -= 10;
 	if (key == 124)
 		data->shift_x += 10;
-	deal_key_plus(key, data);
-	deal_esc(key, data);
+	keyboard_plus(key, data);
+	key_esc(key, data);
 	mlx_clear_window(data->mlx_ptr, data->win_ptr);
 	draw(data);
 	return (0);
@@ -90,9 +90,9 @@ int		main(int argc, char **argv)
 			ft_putstr("usage: ./fdf map.fdf\n");
 		data = (t_fdf *)malloc(sizeof(t_fdf));
 		read_file(argv[1], data);
-		set_default(data);
+		default_value(data);
 		draw(data);
-		mlx_hook(data->win_ptr, 2, 0, deal_key, data); /* для бонусов */
+		mlx_hook(data->win_ptr, 2, 0, keyboard, data); /* для бонусов */
 		mlx_loop(data->mlx_ptr);/* бесконечный цикл, что после рисовки окно не схлопнулось */
 		close(fd);
 	}
