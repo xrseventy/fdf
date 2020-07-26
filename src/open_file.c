@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   read_file.c                                        :+:      :+:    :+:   */
+/*   open_file.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gdoze <gdoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -49,38 +49,37 @@ void	fill_matrix(int *z_string, char *line)
 	char	**nums;
 	int		i;
 
-	nums = ft_strsplit(line, ' '); /* делим строку */
+	nums = ft_strsplit(line, ' ');
 	i = 0;
 	while (nums[i])
 	{
-		z_string[i] = ft_atoi(nums[i]); /* записываем в массив переводя в цифры */
+		z_string[i] = ft_atoi(nums[i]);
 		free(nums[i]);
 		i++;
 	}
 	free(nums);
 }
 
-void	read_file(char *file_name, t_fdf *data)
+void	open_file(char *file_name, t_fdf *data)
 {
 	int		fd;
 	char	*string;
 	int		i;
 
-	data->height = get_height(file_name); /*получили высоту и ширину*/
+	data->height = get_height(file_name);
 	data->width = get_width(file_name);
-	data->z_coordinate = (int **)malloc(sizeof(int *) * (data->height + 1)); /*память под массив строчек(убр для нормы)*/
+	data->z_coordinate = (int **)malloc(sizeof(int *) * (data->height + 1));
 	i = 0;
 	while (i <= data->height)
-		data->z_coordinate[i++] = (int*)malloc(sizeof(int) * (data->width + 1)); /*память под каждую строчку(убр для норм)*/
+		data->z_coordinate[i++] = (int*)malloc(sizeof(int) * (data->width + 1));
 	fd = open(file_name, O_RDONLY, 0);
 	i = 0;
 	while (get_next_line(fd, &string))
 	{
-		fill_matrix(data->z_coordinate[i], string); /*происходит запись*/
+		fill_matrix(data->z_coordinate[i], string);
 		free(string);
 		i++;
 	}
 	free(string);
 	close(fd);
-	//data->z_coordinate[i] = NULL;
 }

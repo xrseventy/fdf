@@ -39,7 +39,7 @@ typedef struct	s_fdf
 	int			z_zoom;
 }				t_fdf;
 
-void			read_file(char *file_name, t_fdf *data);
+void			open_file(char *file_name, t_fdf *data);
 void			bline(float x, float y, float x1, float y1, t_fdf *data);
 void			draw(t_fdf *data);
 void			default_value(t_fdf *data);

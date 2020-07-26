@@ -20,7 +20,6 @@ INCLUDES = -I$(HEADERS_DIRECTORY) -I$(LIBFT_HEADERS) -I$(MINILIBX_HEADERS)
 ######    LIBFT
 LIBFT_DIRECTORY = ./libft/
 LIBFT = $(LIBFT_DIRECTORY)libft.a
-#LIBFT_HEADERS = $(LIBFT_DIRECTORY)includes/
 LIBFT_HEADERS = $(LIBFT_DIRECTORY)libft.h
 
 
@@ -38,9 +37,10 @@ HEADERS = $(addprefix $(HEADERS_DIRECTORY), $(HEADERS_LIST))
 
 SOURCES_DIRECTORY = ./src/
 SOURCES_LIST = main.c\
-draw.c\
-isometric.c \
-	read_file.c
+               painting.c\
+               isometric.c \
+	           open_file.c
+
 SOURCES = $(addprefix $(SOURCES_DIRECTORY), $(SOURCES_LIST))
 
 OBJECTS_DIRECTORY = objects/

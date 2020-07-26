@@ -29,8 +29,6 @@ void	default_value(t_fdf *data)
 
 void	keyboard_plus(int key, t_fdf *data)
 {
-	if (key == ARROW_RIGHT)
-		data->shift_x += 10;
 	if (key == MAIN_PAD_PLUS || key == NUM_PAD_PLUS)
 		data->zoom += 1;
 	if (key == MAIN_PAD_MINUS || key == NUM_PAD_MINUS)
@@ -45,10 +43,8 @@ void	keyboard_plus(int key, t_fdf *data)
 		data->angle += 0.05;
 	if (key == NUM_PAD_6 || key == MAIN_PAD_6)
 		data->angle -= 0.05;
-	if (key == NUM_PAD_8 || key == MAIN_PAD_8)
-		data->z_zoom += 1;
-	if (key == NUM_PAD_2 || key == MAIN_PAD_2)
-		data->z_zoom -= 1;
+	if (key == WHITE_SPACE)
+		data->is_iso = (data->is_iso) ? 0 : 1;
 }
 
 void	key_esc(int key, t_fdf *data)
@@ -61,16 +57,15 @@ void	key_esc(int key, t_fdf *data)
 	}
 }
 
-int		keyboard(int key, t_fdf *data) /* бонусная часть для кнопок */
+int		keyboard(int key, t_fdf *data)
 {
-	ft_printf("%d\n", key);
-	if (key == 126)
+	if (key == ARROW_UP)
 		data->shift_y -= 10;
-	if (key == 125)
+	if (key == ARROW_DOWN)
 		data->shift_y += 10;
-	if (key == 123)
+	if (key == ARROW_LEFT)
 		data->shift_x -= 10;
-	if (key == 124)
+	if (key == ARROW_RIGHT)
 		data->shift_x += 10;
 	keyboard_plus(key, data);
 	key_esc(key, data);
@@ -87,13 +82,16 @@ int		main(int argc, char **argv)
 	if (argc == 2)
 	{
 		if (!((fd = open(argv[1], O_RDONLY)) >= 0))
+		{
 			ft_putstr("usage: ./fdf map.fdf\n");
+			return (0);
+		}
 		data = (t_fdf *)malloc(sizeof(t_fdf));
-		read_file(argv[1], data);
+		open_file(argv[1], data);
 		default_value(data);
 		draw(data);
-		mlx_hook(data->win_ptr, 2, 0, keyboard, data); /* для бонусов */
-		mlx_loop(data->mlx_ptr);/* бесконечный цикл, что после рисовки окно не схлопнулось */
+		mlx_hook(data->win_ptr, 2, 0, keyboard, data);
+		mlx_loop(data->mlx_ptr);
 		close(fd);
 	}
 	return (0);
