@@ -35,4 +35,3 @@ make
 **"esc"** - выход
 
 
-![animation](https://user-images.githubusercontent.com/41144800/90342597-0ff57880-e012-11ea-95be-c0ad7ff7a10e.gif)
