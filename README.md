@@ -1,6 +1,7 @@
 # fdf_study
 
 ## О проекте
+
 Школьный проект по ветке "Графика".
 
 Для отрисовки линий используется алгоритм [Брезенхайма](https://habr.com/ru/post/185086/).
@@ -8,7 +9,9 @@
 Необходимо прочитать карту, и в соотвествии с заданными параметрами вывести изображение
 
 Пример карты
-https://github.com/xrseventy/fdf_study/blob/master/map.png?raw=true
+
+![map](https://user-images.githubusercontent.com/41144800/90342024-7f1c9e00-e00d-11ea-8372-dae43bdc8e38.png)
+
 
 ## Запуск
 ```
@@ -31,3 +34,5 @@ make
 
 **"esc"** - выход
 
+
+![animation](https://user-images.githubusercontent.com/41144800/90342597-0ff57880-e012-11ea-95be-c0ad7ff7a10e.gif)
