@@ -17,7 +17,8 @@
 
 **Пример обработанной карты**
 
-![Screenshot from 2020-08-17 08-45-12](https://user-images.githubusercontent.com/41144800/90361134-1a416200-e066-11ea-824f-16893d29e527.png)
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/41144800/90793127-0458c900-e314-11ea-9c8a-774cabc3aab9.gif)
+
 
 ## Запуск
 ```
